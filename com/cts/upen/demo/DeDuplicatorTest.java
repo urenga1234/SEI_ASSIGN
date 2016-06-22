@@ -36,6 +36,7 @@ public class DeDuplicatorTest {
 		int[] output=testDeDuplicatorUtil.deDuplicate(randomarray);
 		assertNotNull(output);
 		assertTrue(output.length <= randomarray.length);
+	
 	}
 	
 	@Test
@@ -75,6 +76,8 @@ public class DeDuplicatorTest {
 			
 			if(start >= end)
 					match=true;
+			else
+				match=false;
 			
 		}
 	    return match;
