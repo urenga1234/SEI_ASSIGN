@@ -73,7 +73,7 @@ public class DeDuplicatorTest {
 			int start=inputLIst.indexOf(integer);
 			int end =outLIst.indexOf(integer);
 			
-			if(start <= end)
+			if(start >= end)
 					match=true;
 			
 		}
